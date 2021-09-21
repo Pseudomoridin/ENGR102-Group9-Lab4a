@@ -10,9 +10,9 @@ stringFinal = ""
 
 if (abs(int(a)) != int(a)):
   if (abs(int(a)) == 1):
-    squaredString = " - " + squaredString
+    squaredString = "- " + squaredString
   else:
-    squaredString = " - " + a[1:] + squaredString
+    squaredString = "- " + a[1:] + squaredString
 if int(a) == 0:
   squaredString = ""
 
