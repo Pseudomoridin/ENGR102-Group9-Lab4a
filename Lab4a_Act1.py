@@ -31,5 +31,3 @@ if (ticket > 0):
   price += ticket * 1
 
 print("${:.2f}".format(price))
-
-# raise Exception("File currently not implemented, comment out exec command to test other files.")

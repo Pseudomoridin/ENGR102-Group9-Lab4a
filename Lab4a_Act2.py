@@ -40,5 +40,3 @@ else:
 constant = c + constant
 
 print(squaredString + xString + constant)
-
-#raise Exception("File currently not implemented, comment out exec command to test other files.")
