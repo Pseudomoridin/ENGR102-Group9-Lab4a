@@ -11,3 +11,6 @@ Lost Ticket Charge: $36.00
 
 ## Act 2
 Algorithm to convert the coefficients a, b, c into standard polynomial notation (ax^2 + bx + c)
+
+## Act 3
+Weird stuff with booleans
