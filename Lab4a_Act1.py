@@ -1,3 +1,14 @@
+# By submitting this assignment, I agree to the following:
+#   "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#   "I have not given or received any unauthorized aid on this assignment."
+# Names:        Elayne Elphingstone
+#               Reagan Wall
+#               Logan Winship
+#               Tyler Mayou & Zack Abbott
+# Section:      472/572
+# Assignment:   Lab 2A Activity 3
+# Date:         September 8, 2021
+
 ticket = float(input("Enter Ticket: "))
 lost_ticket = False
 price = 0
