@@ -2,9 +2,9 @@ trues = ["True", "T", "t"]
 falses = ["False", "F", "f"]
 breakHere = ""
 
-a = input()
-b = input()
-c = input()
+a = input("bool1: ")
+b = input("bool2: ")
+c = input("bool3: ")
 inlist = [a,b,c]
 try:
   int(a)
