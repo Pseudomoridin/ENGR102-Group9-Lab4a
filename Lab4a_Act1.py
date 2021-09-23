@@ -29,18 +29,12 @@ for x in range(days):
 
 # Price per individual hour
 if (ticket > 0):
-  if ticket > 2:
-    price += 4 * 2
-  else:
-    price += 4 * ticket
+  price += 4
   ticket -= 2
 if (ticket > 0):
-  if ticket > 2:
-    price += 3 * 2
-  else:
-    price += 3 * ticket
+  price += 3
   ticket -= 2
 if (ticket > 0):
   price += ticket * 1
 
-print("Parking for {0} hours please pay ${1:.2f}".format(saveticket, price))
+print("Parking for {0} hours please pay ${1}".format(saveticket, price))

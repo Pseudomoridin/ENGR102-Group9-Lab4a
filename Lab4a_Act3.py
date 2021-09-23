@@ -19,6 +19,7 @@ c = input("Enter True or False for c: ")
 inlist = [a,b,c]
 
 # try/catches ensuring the right data type
+# it should throw an error if its the right data type
 try:
   int(a)
   breakHere += "A"
@@ -37,6 +38,7 @@ try:
 except:
   c
 
+# Can't raise exception inside a try/catch so it's done here, tells user what output was bad
 if not breakHere == "":
   raise Exception("ValueError: Invalid input {}".format(breakHere))
 
@@ -47,8 +49,8 @@ for x in range(len(inlist)):
     inlist[x] = False
   else:
     raise Exception("ValueError: String \"{}\" is invalid input.".format(inlist[x]))
-
-#part B
+# Part A
+# Part B
 a = inlist[0]
 b = inlist[1]
 c = inlist[2]
@@ -57,4 +59,4 @@ print("a and b and c:",bool(a and b and c))
 print("a or b or c:",bool(a or b or c))
 #part C
 print("XOR:",bool(not(a and b) and (a or b)))
-print("Odd number:",bool())
+print("Odd number:",bool(not((a or b or c) or (a and b and (not c) or (a and (not b) and c) or ((not a) and b and c)))))

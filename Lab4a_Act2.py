@@ -1,4 +1,4 @@
-# By submitting this assignment, I agree to the following:
+1# By submitting this assignment, I agree to the following:
 #   "Aggies do not lie, cheat, or steal, or tolerate those who do."
 #   "I have not given or received any unauthorized aid on this assignment."
 # Names:        Elayne Elphingstone
@@ -26,6 +26,8 @@ if (abs(int(a)) != int(a)):
   else:
     squaredString = "- " + a[1:] + squaredString
     a = ""
+elif (int(a) == 1):
+  a = ""
 try:
   if int(a) == 0:
     squaredString = ""
@@ -42,7 +44,8 @@ elif abs(int(b)) == 1:
   if abs(int(b)) != int(b):
     b = " - "
   else:
-    b = ""
+    if (squaredString != ""):
+      b = " + "
 elif abs(int(b)) != int(b):
   b = " - " + b[1:]
 else:
