@@ -24,9 +24,6 @@ if (ticket // 1 != ticket):
 days = int(ticket // 24)
 ticket = ticket % 24
 
-for x in range(days):
-  price +=  24
-
 # Price per individual hour
 if (ticket > 0):
   price += 4
@@ -36,5 +33,11 @@ if (ticket > 0):
   ticket -= 2
 if (ticket > 0):
   price += ticket * 1
+
+if (ticket > 24):
+  ticket = 24
+
+for x in range(days):
+  price +=  24
 
 print("Parking for {0} hours please pay ${1}".format(saveticket, price))

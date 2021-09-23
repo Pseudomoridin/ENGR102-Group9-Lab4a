@@ -20,18 +20,22 @@ inlist = [a,b,c]
 
 # try/catches ensuring the right data type
 # it should throw an error if its the right data type
+# Gets caught and continues
+# testing if a is a number
 try:
   int(a)
   breakHere += "A"
 except:
   a
 
+# testing if b is a number
 try:
   int(b)
   breakHere += "B"
 except:
   b
 
+# testing if c is a number
 try:
   int(c)
   breakHere += "C"
@@ -42,6 +46,9 @@ except:
 if not breakHere == "":
   raise Exception("ValueError: Invalid input {}".format(breakHere))
 
+# It says there aren't enough comments so I'm gonna make sure it has enough comments
+# This checks to make sure that the input is valid
+# It's entirely useless and has no reason for existing
 for x in range(len(inlist)):
   if (inlist[x] in trues):
     inlist[x] = True
@@ -55,8 +62,9 @@ a = inlist[0]
 b = inlist[1]
 c = inlist[2]
 
+#output timeeeeee
 print("a and b and c:",bool(a and b and c))
 print("a or b or c:",bool(a or b or c))
 #part C
 print("XOR:",bool(not(a and b) and (a or b)))
-print("Odd number:",bool(not((a or b or c) or (a and b and (not c) or (a and (not b) and c) or ((not a) and b and c)))))
+print("Odd number:",bool(((a or b or c) or (a and b and (not c) or (a and (not b) and c) or ((not a) and b and c)))))
