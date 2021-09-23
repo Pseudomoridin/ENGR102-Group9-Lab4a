@@ -56,8 +56,8 @@ for x in range(len(inlist)):
     inlist[x] = False
   else:
     raise Exception("ValueError: String \"{}\" is invalid input.".format(inlist[x]))
-# Part A
-# Part B
+########### Part A ###########
+########### Part B ########### 
 a = inlist[0]
 b = inlist[1]
 c = inlist[2]
@@ -65,6 +65,8 @@ c = inlist[2]
 #output timeeeeee
 print("a and b and c:",bool(a and b and c))
 print("a or b or c:",bool(a or b or c))
-# Part C
+########### Part C ###########
 print("XOR:",bool(not(a and b) and (a or b)))
 print("Odd number:",bool(((a and b and c) or (a and (not b) and (not c) or ((not a) and (not b) and c) or ((not a) and b and (not c))))))
+
+########### Part D ########### 
