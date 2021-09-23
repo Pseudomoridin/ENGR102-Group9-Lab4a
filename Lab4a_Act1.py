@@ -9,7 +9,9 @@
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
 
-ticket = float(input("Enter Ticket: "))
+print("Enter the hours parked as a decimal number. Include a negative sign if the ticket is lost.")
+ticket = float(input("Please enter the hours parked: "))
+saveticket = ticket
 lost_ticket = False
 price = 0
 rate = -1
@@ -41,4 +43,4 @@ if (ticket > 0):
 if (ticket > 0):
   price += ticket * 1
 
-print("${:.2f}".format(price))
+print("Parking for {0} hours please pay ${1:.2f}".format(saveticket, price))

@@ -13,10 +13,12 @@ trues = ["True", "T", "t"]
 falses = ["False", "F", "f"]
 breakHere = ""
 
-a = input("bool1: ")
-b = input("bool2: ")
-c = input("bool3: ")
+a = input("Enter True or False for a: ")
+b = input("Enter True or False for b: ")
+c = input("Enter True or False for c: ")
 inlist = [a,b,c]
+
+# try/catches ensuring the right data type
 try:
   int(a)
   breakHere += "A"
@@ -51,8 +53,8 @@ a = inlist[0]
 b = inlist[1]
 c = inlist[2]
 
-print(bool(a and b and c))
-print(bool(a or b or c))
+print("a and b and c:",bool(a and b and c))
+print("a or b or c:",bool(a or b or c))
 #part C
-print(bool(not(a and b) and (a or b)))
-print(bool())
+print("XOR:",bool(not(a and b) and (a or b)))
+print("Odd number:",bool())

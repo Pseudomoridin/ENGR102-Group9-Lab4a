@@ -9,6 +9,6 @@
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
 
-exec(open("./Lab4a_Act1.py").read())
-exec(open("./Lab4a_Act2.py").read())
+#exec(open("./Lab4a_Act1.py").read())
+#exec(open("./Lab4a_Act2.py").read())
 exec(open("./Lab4a_Act3.py").read())

@@ -9,24 +9,32 @@
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
 
-a = str(input("Enter the first coefficient: "))
-b = str(input("Enter the second coefficient: "))
-c = str(input("Enter the third coefficient: "))
+a = str(input("Please enter the coefficient A: "))
+b = str(input("Please enter the coefficient B: "))
+c = str(input("Please enter the coefficient C: "))
 
 squaredString = "x^2"
 xString = "x"
 constant = ""
 stringFinal = ""
 
-
+#handling a, different from others 
 if (abs(int(a)) != int(a)):
   if (abs(int(a)) == 1):
     squaredString = "- " + squaredString
+    a = ""
   else:
     squaredString = "- " + a[1:] + squaredString
-if int(a) == 0:
-  squaredString = ""
+    a = ""
+try:
+  if int(a) == 0:
+    squaredString = ""
+  else:
+    squaredString = a + squaredString
+except:
+  a
 
+#standardized method for b and c
 if int(b) == 0:
   b = ""
   xString = ""
@@ -38,7 +46,8 @@ elif abs(int(b)) == 1:
 elif abs(int(b)) != int(b):
   b = " - " + b[1:]
 else:
-  b = " + " + b
+  if squaredString != "":
+    b = " + " + b
 xString = b + xString
 
 if int(c) == 0:
@@ -50,4 +59,4 @@ else:
   c = " + " + c
 constant = c + constant
 
-print(squaredString + xString + constant)
+print("The quadratic equation is {} = 0".format(squaredString + xString + constant))
