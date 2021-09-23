@@ -65,6 +65,6 @@ c = inlist[2]
 #output timeeeeee
 print("a and b and c:",bool(a and b and c))
 print("a or b or c:",bool(a or b or c))
-#part C
+# Part C
 print("XOR:",bool(not(a and b) and (a or b)))
-print("Odd number:",bool(((a or b or c) or (a and b and (not c) or (a and (not b) and c) or ((not a) and b and c)))))
+print("Odd number:",bool(((a and b and c) or (a and (not b) and (not c) or ((not a) and (not b) and c) or ((not a) and b and (not c))))))

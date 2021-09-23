@@ -12,11 +12,11 @@
 print("Enter the hours parked as a decimal number. Include a negative sign if the ticket is lost.")
 ticket = float(input("Please enter the hours parked: "))
 saveticket = ticket
-lost_ticket = False
+lostTicket = False
 price = 0
 rate = -1
 if (abs(ticket) != ticket):
-  price += 36
+  lostTicket = True
   ticket = abs(ticket)
 if (ticket // 1 != ticket):
   ticket = int((ticket // 1) + 1)
@@ -34,10 +34,13 @@ if (ticket > 0):
 if (ticket > 0):
   price += ticket * 1
 
-if (ticket > 24):
-  ticket = 24
+if (price > 24):
+  price = 24
 
 for x in range(days):
   price +=  24
 
-print("Parking for {0} hours please pay ${1}".format(saveticket, price))
+if lostTicket:
+  price += 36
+
+print("Parking for {0} hours please pay ${1:.0f}".format(saveticket, price))
