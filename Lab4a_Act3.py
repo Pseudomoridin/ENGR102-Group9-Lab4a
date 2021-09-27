@@ -73,5 +73,5 @@ print("Odd number:",bool(((a and b and c) or (a and (not b) and (not c) or ((not
 print("Complex 1:", bool( (not (a and not b) or (not c and b)) and (not b) or (not a and b and not c) or (a and not b) ))
 print("Complex 2:", bool( (not ((b or not c) and (not a or not c))) or (not (c or not (b and c))) or (a and not c) and (not a or (a and b and c) or (a and ((b and not c) or (not b)) ))
 ))
-print("Simple 1:", bool( ((a != b) or (not a and not b)) ))
+print("Simple 1:", bool( ((a != b != 1) or not a and not b) ))
 print("Simple 2:", bool( (not ((b or not c) and (not a or not c))) or (a and not c) ))
